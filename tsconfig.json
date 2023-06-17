@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      // Import non-ES modules as default imports.
+      "esModuleInterop": true,
+      // Target latest version of ECMAScript.
+      "target": "ES2022",
+      "strictNullChecks": true,
+      "noImplicitAny": true,
+      "strict": true,
+      "strictFunctionTypes": false,
+      "noImplicitThis": false,
+      // Search under node_modules for non-relative imports.
+      "moduleResolution": "node",
+      // Import .json files
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "outDir": "build",
+      "baseUrl": ".",
+      "paths": {
+        "*": ["node_modules/*", "src/types/*"]
+      }
+    },
+    "include": ["src/**/*"],
+    "exclude": [".templates"],
+    // "incremental": true,                   /* Enable incremental compilation */
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "lib": ["es6"] /* Specify library files to be included in the compilation. */,
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    "outDir": "build" /* Redirect output structure to the directory. */,
+    "rootDir": "src" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
+    
+    /* Strict Type-Checking Options */
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "resolveJsonModule": true
+  }
+  
